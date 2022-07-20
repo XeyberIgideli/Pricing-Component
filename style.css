@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+
+    overflow-x: hidden;
+}
+
+body {
+    line-height: 1;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    background-color: hsl(240, 78%, 98%);
+    background-image: url("images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    padding-top: 6rem;
+}
+
+.pricing {
+    background-image: url("images/bg-top.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    height: 100vh;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.6rem;
+    color: hsl(233, 13%, 49%);
+}
+
+/* CARDS */
+.cards {
+    display: flex; 
+    margin-top: 6rem;
+    justify-content: center;
+}
+.card {
+    background-color: #fff;
+    padding: 3rem; 
+    border-radius: 9px;
+    box-shadow: -5px 10px hsl(240, 78%, 98%);
+    width: 35rem;
+}
+.premium {
+    background: linear-gradient(hsl(236, 72%, 79%),hsl(237, 63%, 64%)); 
+    width: 30rem;
+    transform: scale(1.1);
+    padding: 3.5rem 3rem;
+}
+.premium .price, .premium .type, .premium .features li {    
+    color: #fff;
+}
+.type {
+    text-align: center;
+    font-size: 1.5rem;
+    color: hsl(234, 14%, 74%);
+}
+
+.price {
+    font-size: 6rem;
+    text-align: center;
+    color: hsl(232, 13%, 33%);
+    padding: 2rem 0;
+}
+
+.features {
+    list-style-type: none;
+}
+
+.features li {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    color: hsl(234, 14%, 74%);
+    border-top: 1px solid hsl(234, 14%, 74%);
+    text-align: center;
+    padding-top: 1.8rem;
+}
+
+li:last-child {
+    border-bottom: 1px solid hsl(234, 14%, 74%);
+    padding-bottom: 1.2rem;
+}
+
+.button {
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.2rem;
+    border-radius: 0.4rem;
+}
+.btn-premium {
+    background: #fff!important;
+    color: hsl(237, 63%, 64%)!important;    
+    border: 1px solid transparent;
+    transition: all 0.3s;
+} 
+.btn-premium:hover {
+    color: #fff!important;
+    background-color: hsl(237, 63%, 64%)!important;
+    border: 1px solid #fff;
+}
+.btn-primary {
+    color: #fff;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    transition: all 0.7s;
+}
+.btn-primary:hover {
+    color: hsl(237, 63%, 64%);
+    background: #fff;
+}
+.sign {
+    font-size: 3rem;
+    vertical-align: middle;
+}
+
+@media (max-width: 376px) {
+    .container {
+        width: 100%;
+    }
+    .cards {
+        flex-direction: column;
+    }
+}
